@@ -16,6 +16,26 @@ console.log(isEven(myNums));
 
 function squareNumbers(nums){
     let results = [];
-    nums.forEach();
+    nums.forEach(function(num){
+        results.push(num * num)
+    });
+    return results
 }
 console.log(squareNumbers(myNums));
+
+const cities = [
+    { name: 'Los Angeles', temperature: 60.0},
+    { name: 'Atlanta', temperature: 52.0 },
+    { name: 'Detroit', temperature: 48.0 },
+    { name: 'New York', temperature: 80.0 }
+];
+
+function CitiesTemp(info,temp){
+    const tempRequested = num => num < temp;
+    info.forEach(function (myObject){
+        if (tempRequested(myObject.temperature)){
+            console.log(myObject.name)
+        }
+    })
+}
+CitiesTemp(cities,70)
