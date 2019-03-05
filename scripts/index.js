@@ -78,8 +78,17 @@ function helloWorld(){
 
 function callNTimes(times, fun){
     for (let i = 0; i < times; i++){
-        fun()
+        fun();
     }
 }
 // callNTimes(5, helloWorld)
+
+function strMultiply(str, times){
+    let results = '';
+    for (let i = 0; i < (times); i++){
+        results += str;
+    }
+    return results;
+}
+console.log(strMultiply("KITTY",5))
 
