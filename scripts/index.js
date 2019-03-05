@@ -1,13 +1,9 @@
 // add your solutions here
 function isPositive(nums){
-    result = []
-    nums.forEach(function (num){
-        if (num > 0){
-            result.push(num)
-        }
-    })
-    return result
+    results = []
+    const isPositive = (num) => num > 0;
+    results.push(nums.filter(isPositive))
+    return results
 }
-myNums = [1,2,3,4,5,-6,-7,-8,3,5,6,-9]
-
+myNums = [1,2,3,4,5,6,7,-3,-4,-5]
 console.log(isPositive(myNums))
